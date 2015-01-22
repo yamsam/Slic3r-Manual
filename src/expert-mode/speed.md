@@ -1,4 +1,4 @@
-﻿% Speed
+﻿% 速度
 
 <!---
 Once the printer is reliably producing good quality prints it may be
@@ -14,7 +14,7 @@ can reduce the effects of oozing.
 だろう。これには多くの利点がある。プリント速度の高速化はもちろん、プリント時間の
 短縮により、より多くのレイヤーの作成が可能になる。これはつまり、より小さいレイヤー
 高が可能になることであり、したがってプリント品質が改善される。さらなる利点として、
-extrusion間の高速な移動によるoozingの減少がある。
+押出の合間の高速移動による漏れの減少がある。
 
 <!---
 The best approach is to increment the various speed parameters in small
@@ -28,11 +28,11 @@ because slight gaps will not matter as much).
 --->
 
 ベストアプローチは、速度パラメータを少しづつ増やしながら、その変化がプリント品質
-に及ぼす影響を観察することである。これはTravel速度から始めるのが安全だ。
+に及ぼす影響を観察することである。これは送り速度から始めるのが安全だ。
 プリンタ次第だが、250mm/sという速度を実現することすら不可能ではない。
-perimetersやinfillの速度調整はsimple modeから利用することができる。perimeter
-の基本的なルールはinfillより速度を少し遅くすることだ。これには表面上に起こりうる欠陥
-を減らす効果がある（infillを早くすることが可能なのは、わずかなギャップがあっても
+perimeters や infill の速度調整は simple mode から利用することができる。perimeter 
+の基本的なルールは infill より速度を少し遅くすることだ。これには表面上に起こりうる欠陥
+を減らす効果がある（ infill を早くできるのは、そこにわずかなギャップがあっても
 それほど問題にならないからだ）。
 
 <!---
@@ -41,8 +41,8 @@ Differentiation between external, small and other perimeters, infill
 locations, and bridges and gaps are available, as well as the ability to
 slow down for the first layer.
 --->
-Expoer modeではプリント速度の微調整を行うためのパラメータが提供されている。
-パラメータはexternal, smallなどの各種perimetersからinfiil、bridges, gapが利用できる。
+Expert modeではプリント速度の微調整を行うためのパラメータが提供されている。
+パラメータは external, small などの各種 perimeters からinfill、bridges, gapが利用できる。
 また第一レイヤーの低速化も可能だ。
 
  ![Expert mode speed
@@ -54,7 +54,7 @@ to the preceding value, e.g. 50% solid infill would be half of the value
 defined for infill.
 --->
 パラメータの値はパーセンテージで指定することができる。これは先行する値からの
-相対的な値になる。たとえばsolid infollが50%であるとは、infillの値の半分
+相対的な値になる。たとえば solid infill が50%であるとは、infill で指定した値の半分
 であることを意味する。
 
 <!---
@@ -67,15 +67,15 @@ A few general guidelines for each option:
     slightly as the `External perimeters` option can be used to ensure
     blemish free external faces.
 --->
--   `Perimeters` - export modeではこの値を少し増やしてもよい。
-    これは`External perimeters`によって、欠損の無い外部面を保持するからである。
+-   `Perimeters` - expert modeではこの値を少し増やしてもよい。
+    これは`External perimeters`によって、欠損の無い外部面が保持されるからである。
 
 <!---
 -   `Small perimeters` - Meant for holes, islands and fine details, a
     slower speed here is recommended.
 --->
 -   `Small perimeters` - 穴やアイランド、微細な形状のためのパラメータ。
-　　速度を遅くすることを推奨する。
+　　速度は遅くすることを推奨する。
 
 <!---
 -   `External perimeters` - A slightly slower value may ensure cleaner
@@ -89,7 +89,7 @@ A few general guidelines for each option:
     the fill structure. Faster extrusions can break and result in weak
     spots.
 --->
--   `Infill` - infill構造の完全性を失わない範囲で早くしてもよい。ただしextrusion
+-   `Infill` - infill 構造の完全性を失わない範囲で早くしてもよい。ただし押出
     が早すぎると形状の破壊や脆弱な部位を生む原因となる。
 
 <!---
@@ -97,8 +97,8 @@ A few general guidelines for each option:
     layers is usually slightly slower than infill but faster than
     perimeters.
 --->
--   `Solid infill` - モデルの底部や、追加されたsolidレイヤーでは通常、infillよりも
-    少し遅く、かつperimetersより早く設定する。
+-   `Solid infill` - モデルの底部や、追加された solid レイヤーでは通常、infill よりも
+    少し遅く、かつ perimeters より早く設定する。
 
 <!---
 -   `Top solid infill` - Allow time for the extrusion to cleanly cover
@@ -107,7 +107,7 @@ A few general guidelines for each option:
     preparing the way for a neat finish.
 --->
 -   `Top solid infill` - きっちりとしたトップ表面を作るために、既存のトップレイヤー
-　　をしっかりと覆うために吐出を行う時間を確保する。最後の数レイヤーはinfill構造上に
+　　をしっかりと覆うために吐出を行う時間を確保する。最後の数レイヤーは infill 構造上に
 　　うまくブリッジを作り、美しい仕上がりを作るための下地となる。
 
 <!---
@@ -124,7 +124,7 @@ A few general guidelines for each option:
     fast will result in broken strands. Experimentation is the key here,
     but generally bridging runs slower than perimeters.
 --->
--   `Bridges` - 橋を作るextrusionであり、材料とクーリングに依存する。遅すぎれば
+-   `Bridges` - 橋を渡す押出であり、材料とクーリングに依存する。遅すぎれば
     垂みが生じ、早すぎれば切れた紐のようになる。試行錯誤が必要だが、
    一般的にはperimetersより遅くするとよい。
 
@@ -142,7 +142,7 @@ A few general guidelines for each option:
 -   `Travel` - As fast as your printer will allow in order to minimise
     ooze.
 --->
--   `Travel` - oozeを最小化するためにプリンタが可能な範囲で早くする。
+-   `Travel` - 漏れを最小化するためにプリンタが可能な範囲で早くする。
 
 <!---
 -   `First layer speed` - As mentioned in section
