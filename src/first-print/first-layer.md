@@ -37,7 +37,7 @@ from the bed and not adhering correctly.
 <!---
 #### Higher temperature.
 --->
-### 温度は高めに
+#### 温度は高めに
 
 <!---
  The extruder hot-end and bed, if it is heated,
@@ -51,7 +51,7 @@ recommended.
 <!---
 #### Lower speeds.
 --->
-### ゆっくりと
+#### ゆっくりと
 
 <!---
  Slowing down the extruder for the first layer
@@ -66,7 +66,7 @@ correctly. 30% or 50% of the normal speed is recommended.
 <!---
 #### Correctly calibrated extrusion rates.
 --->
-### 押出量は正確に
+#### 押出量は正確に
 
 <!---
  If too much material is laid down
@@ -86,7 +86,7 @@ important to have a well-calibrated extrusion rate as recommended in
 <!---
 #### First layer height.
 --->
-### 第一レイヤーは厚く
+#### 第一レイヤーは厚く
 
 <!---
  A thicker layer height will provide more
@@ -182,6 +182,6 @@ other cooling mechanism at work. Keeping the fan turned off for the
 first few layers is generally recommended.
 --->
 上記に関連して、ファンなどの冷却機構が機能しているのに第一レイヤーの温度
-を上げても全く意味がない。最初の数レイヤーをプリントする愛大はファンを切る
+を上げても全く意味がない。最初の数レイヤーをプリントする間はファンを切る
 ことを推奨する。
 
