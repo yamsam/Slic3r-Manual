@@ -1,7 +1,7 @@
 ﻿<!---
 % The Important First Layer
 --->
-% 第一レイヤーの重要性
+% ファーストレイヤーの重要性
 
 <!---
  Before delving into producing the
@@ -12,11 +12,11 @@ can lead to complete failure, parts detaching, and warping. There are
 several techniques and recommendations one can heed in order to minimise
 the chance of this happening.
 --->
-最初のプリントの作成にのめりこむ前に、ちょっと回り道をして第一レイヤーを正しく
-作成することの重要性について議論しても無駄にはならない。これまで多くの人間が
-試行錯誤の中で発見してきたように、第一レイヤーがベストでない場合、部品の剥離
+最初のプリントの作成にのめりこむ前に、ちょっと回り道をしてファーストレイヤーを正しく
+作成することの重要性について議論しても無駄ではない。これまで多くの人間が
+試行錯誤の中で発見してきたように、ファーストレイヤーがベストでない場合、部品の剥離
 や歪みなどの全くの失敗につながるからだ。これを最小限に抑えるために注意すべき
-テクニックやお勧めの方法を紹介する。
+テクニックや推奨方法を紹介する。
 
 <!---
 #### Level bed.
@@ -45,7 +45,7 @@ can be made hotter for the first layer, thus decreasing the viscosity of
 the material being printed. As a rule of thumb, an additonal 5° is
 recommended.
 --->
-エクストルーダーのホットエンドとベッドを温める際、第一レイヤーの温度を高く
+エクストルーダーのホットエンドとベッドを温める際、ファーストレイヤーの温度を高く
 すれば、プリント時の材料の粘性が少なくなる。だいたい５°程度高くすることを勧める。
 
 <!---
@@ -60,7 +60,7 @@ reducing the chances of it being stretched too much and not adhering
 correctly. 30% or 50% of the normal speed is recommended.
 --->
 
-第一レイヤーの押出速度を遅くすれば、融解した材料が押し出される際に加えられる外力
+ファーストレイヤーの押出速度を遅くすれば、融解した材料が押し出される際に加えられる外力
 が減り、のばされすぎたり、正しく付着しない確率が減ることになる。通常の速度の
 ３０％から５０％が推奨だ。
 <!---
@@ -78,15 +78,15 @@ important to have a well-calibrated extrusion rate as recommended in
 §[calibration]).
 -->
 押し出された材料の量が多いと、ノズルはそれを次のパスまで引っ張ってしまうことが
-あり、第一レイヤーが引きはがされる原因となる（特に材料が固まっている時）。
-一方で量が少ないと、第一レイヤーが後から緩くなってしまい造形物の剥離や歪み
+あり、ファーストレイヤーが引きはがされる原因となる（特に材料が固まっている時）。
+一方で量が少ないと、ファーストレイヤーが後から緩くなってしまい造形物の剥離や歪み
 を引き起こすことになる。これらの理由により、§[calibration]で推奨しているように、
 押出量を正しく調節することが重要である。
 
 <!---
 #### First layer height.
 --->
-#### 第一レイヤーは厚く
+#### ファーストレイヤーは厚く
 
 <!---
  A thicker layer height will provide more
@@ -97,11 +97,11 @@ to match the diameter of the nozzle, e.g. a first layer height of 0.35mm
 for a 0.35mm nozzle. Note: The first layer height is set this way
 automatically in simple mode.
 --->
-厚いレイヤーはより流出量が増えることになり、その結果より多くの熱が加えられ、
+レイヤーを厚くすればより流出量が増えることになり、その結果より多くの熱が加えられ、
 材料がベッドによりしっかりと付着するようになる。これにはさらにベッドの水平度に対する
-トレランスを増加させる効果もある。第一レイヤーの高さをノズルの直径と合わせることをお勧
-めする。たとえば0.35mmのノズルには第一レイヤー高を0.35mmに設定する。
-（注）simple mode では第一レイヤーの高さはこの方法で設定される。
+トレランスを増加させる効果もある。ファーストレイヤーの高さをノズルの直径と合わせることをお勧
+めする。たとえば0.35mmのノズルにはファーストレイヤー高を0.35mmに設定する。
+（注）simple mode ではファーストレイヤーの高さはこの方法で設定される。
 
 <!---
 #### Fatter extrusion width.
@@ -116,7 +116,7 @@ percentage or a fixed amount. Any spaces between the extrusions are
 adjusted accordingly.
 --->
 ベッドに接触する材料が増えれば増えるほど、造形物がベッドによりしっかりと
-付着することになる。これは第一レイヤーの押出幅を増やすことで実現可能だ。値はパーセント
+付着することになる。これはファーストレイヤーの押出幅を増やすことで実現可能だ。値はパーセント
 か固定値で指定する。押出間の間隔は自動的に調整される。
 
 <!---
@@ -131,11 +131,11 @@ technique recommended above with this one. Setting the first layer
 height to 0.35mm and the first extrusion width to 200% would result in a
 nice fat extrusion 0.65mm wide.
 --->
-値はだいたい200%が推奨である。ただし、この値はレイヤー高から算出されるため、レイヤー高
-が最大値であるときにのみ設定すべきである。たとえばレイヤー高が0.1mmで押出幅が200％
+値はだいたい200%が推奨である。ただし、この値はレイヤー高から算出されるため、設定するときは
+レイヤー高をなるべく大きくすべきである。たとえばレイヤー高が0.1mmで押出幅が200％
 だとすると、実際の押し出された材料の幅は0.2mmにしかならず、これではノズル幅よりも小さくなってしまう。
-この結果、流出量が足りず、プリントは失敗するだろう。したがって、前述の第一レイヤーの設定
-テクニックと併用することを強く推奨する。第一レイヤー高をノズル幅と合わせて0.35mmとし、
+この結果、流出量が足りず、プリントは失敗するだろう。したがって、前述のファーストレイヤーの設定
+テクニックと併用することを強く推奨する。ファーストレイヤー高をノズル幅と合わせて0.35mmとし、
 初期押出幅を200%にすれば、実際の押出幅は0.65mmと良好な太さになる。
 
 <!---
@@ -148,7 +148,7 @@ nice fat extrusion 0.65mm wide.
 bed, and preparing the right surface can vastly improve first layer
 adhesion.
 --->
-ベッド素材の選択やベッド表面を整備することによって、第一レイヤーの
+ベッド素材の選択やベッド表面を整備することによってファーストレイヤーの
 付着性を劇的に改善することができる。
 
 <!---
@@ -181,7 +181,7 @@ increase the temperature of the first layer and still have a fan or
 other cooling mechanism at work. Keeping the fan turned off for the
 first few layers is generally recommended.
 --->
-上記に関連して、ファンなどの冷却機構が機能しているのに第一レイヤーの温度
+上記に関連して、ファンなどの冷却機構が機能しているのにファーストレイヤーの温度
 を上げても全く意味がない。最初の数レイヤーをプリントする間はファンを切る
 ことを推奨する。
 
